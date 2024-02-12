@@ -1,0 +1,53 @@
+div.square {
+  background-color: white;
+  border: 4px solid lightgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+}
+div.square.winning {
+  background-color: lightgreen;
+}
+
+/* Selectable square with a button */
+div.square > button {
+  background-color: lightgoldenrodyellow;
+  border: none;
+  color: lightgoldenrodyellow;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 3rem;
+  width: 100%;
+}
+div.square > button:disabled {
+  cursor: not-allowed;
+}
+div.square > button:focus,
+div.square > button:hover {
+  background-color: lightblue;
+  color: white;
+  outline: 4px solid yellow;
+}
+
+/* Square that has already been selected */
+div.square > span {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 3rem;
+}
+
+/* X and O characters */
+div.square > svg,
+div.square > button > svg {
+  height: 65px;
+}

@@ -1,0 +1,15 @@
+div.turn-board {
+  background-color: #f0f0f0;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+div.turn-board > h2 > span.value {
+  background-color: white;
+  border-radius: 16px;
+  color: red;
+  padding: 4px 12px;
+}
